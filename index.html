@@ -7,27 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBlog</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="infos-bg">
-        <div class="infos container">
+    <div class="superinfo-bg">
+        <div class="superinfo container">
             <span>Seg / Sex - 08:00 às 18:00</span>
             <a href="tel:+5521999999999">+55 21 999999999</a>
             <span>Av. Ali Perto, 330, Botafogo - RJ</span>
         </div>
     </div>
 
-
     <header class="menu-bg">
         <div class="menu container">
             <div class="menu-logo">
                 <a href="./">FlexBlog</a>
             </div>
-
             <nav>
-                <ul class="header-menu">
+                <ul class="menu-nav">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#produtos">Produtos</a></li>
                     <li><a href="#preco">Preço</a></li>
@@ -37,47 +35,44 @@
         </div>
     </header>
 
-
     <h1 class=" introducao container">Novos valores e<br>Propriedades de CSS</h1>
 
-
     <section id="sobre" class="sobre container">
-        <div class="sobre-texto">
+        <div class="sobre-info">
             <h2>Sobre</h2>
             <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
             <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
         </div>
-
         <div class="sobre-img">
-            <img src="./img/sobre1.jpg" alt="Mulher analisando a pintura">
+            <img src="./img/sobre1.jpg" alt="Mulher analisando uma pintura">
+        </div>
+        <div class="sobre-img">
             <img src="./img/sobre2.jpg" alt="Mulher pintando">
         </div>
     </section>
 
-
     <section id="#produtos" class="produtos container">
         <h2>Produtos</h2>
-
-        <div class="produtos-itens">
-            <div id="produto1" class="produtos-box">
+        <div class="produtos-container">
+            <div class="produtos-item purple">
                 <h3>Purple</h3>
-                <img src="./img/produtos1.jpg" alt="">
+                <img src="./img/produtos1.jpg" alt="Produto 1">
             </div>
-            <div id="produto2" class="produtos-box">
+            <div class="produtos-item pink">
                 <h3>Pink</h3>
-                <img src="./img/produtos2.jpg" alt="">
+                <img src="./img/produtos2.jpg" alt="Produto 2">
             </div>
-            <div id="produto3" class="produtos-box">
+            <div class="produtos-item blue">
                 <h3>Blue</h3>
-                <img src="./img/produtos3.jpg" alt="">
+                <img src="./img/produtos3.jpg" alt="Produto 3">
             </div>
         </div>
     </section>
 
-    <section class="planos">
-        <div class="planos-box">
+    <section id="preco" class="preco">
+        <div class="preco-item">
             <h3>Cobre</h3>
-            <span>R$<span>19</span></span>
+            <span><sup>R$</sup>19</span>
             <ul>
                 <li>Planos ilimitados</li>
                 <li>Acesso Restrito</li>
@@ -86,10 +81,9 @@
             </ul>
             <a href="./">Comprar</a>
         </div>
-
-        <div class="planos-box">
+        <div class="preco-item">
             <h3>Prata</h3>
-            <span>R$<span>39</span></span>
+            <span><sup>R$</sup>39</span>
             <ul>
                 <li>Planos ilimitados</li>
                 <li>Acesso Restrito</li>
@@ -99,10 +93,9 @@
             </ul>
             <a href="./">Comprar</a>
         </div>
-
-        <div class="planos-box">
+        <div class="preco-item">
             <h3>Ouro</h3>
-            <span>R$<span>79</span></span>
+            <span><sup>R$</sup>79</span>
             <ul>
                 <li>Planos ilimitados</li>
                 <li>Acesso Restrito</li>
@@ -114,6 +107,50 @@
             <a href="./">Comprar</a>
         </div>
     </section>
+
+    <section id="qualidade" class="qualidade container">
+        <ul>
+            <li>
+                <h3>Inteligente</h3>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+            </li>
+            <li>
+                <h3>Compacto</h3>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
+            </li>
+            <li>
+                <h3>Econômico</h3>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+            </li>
+            <li>
+                <h3>Transparente</h3>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+            </li>
+            <li>
+                <h3>Opaco</h3>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
+            </li>
+            <li>
+                <h3>Sustentável</h3>
+                <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="newsletter container">
+        <div class="newsletter-info">
+            <h3>Newsletter</h3>
+            <p>assine e fique por dentro das novidades</p>
+        </div>
+        <form class="newsletter-form" action="./">
+            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+            <button>Assinar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>FlexBlog © Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>
